@@ -578,8 +578,9 @@ model.add(Dense(1,activation='sigmoid'))
 
 
 # Otimizadores e função-perda
+#Mudança na leaning rate 
 
-model.compile(optimizer=Adam(learning_rate=0.001),
+model.compile(optimizer=Adam(learning_rate=0.0012),
               loss='binary_crossentropy',
               metrics=['accuracy','Precision','Recall','AUC'])
 
